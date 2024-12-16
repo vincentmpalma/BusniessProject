@@ -1,8 +1,8 @@
-*/ .templates-page {
+.templates-page {
   font-family: Arial, sans-serif;
   color: #333;
   background: #fff;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .templates-title {
