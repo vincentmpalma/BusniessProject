@@ -14,8 +14,8 @@
 /* Title Centered */
 .budgeting-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
   color: #222;
 }
 
@@ -119,4 +119,30 @@
   font-size: 2rem;
   margin-bottom: 30px;
   color: #0073e6;
+}
+
+/* Style for the ordered list in the budgeting-description */
+.budgeting-description ol {
+  margin: 20px 0; /* Add spacing above and below the list */
+  padding-left: 20px; /* Add padding for indentation */
+  font-size: 0.9rem; /* Make the font slightly smaller */
+  color: #555; /* Set a soft gray color for readability */
+  line-height: 1.6; /* Improve line spacing for readability */
+  list-style-type: decimal; /* Use default decimal list style */
+  text-align: center;
+  list-style-position: inside;
+  font-size: 1.1rem;
+}
+
+/* Style for individual list items in the ordered list */
+.budgeting-description ol li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  text-align: center;
+}
+
+/* Optional: If you want to add custom numbering */
+.budgeting-description ol li::marker {
+  color: #0073e6; /* Change the color of the list numbers */
+  font-weight: bold; /* Make the list numbers bold */
+  text-align: center;
 }
