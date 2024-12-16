@@ -1,0 +1,286 @@
+/* Body and General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Homepage Container */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* Header */
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background: #444;
+}
+
+/* Main Section */
+.main-section {
+  flex-grow: 1;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.cta-button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
+/* Features Section */
+.features {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.feature-item h4 {
+  color: #0073e6;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+.budget-container {
+  max-width: 800px; /* Restricts the width to 800px */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds some padding inside the container */
+  /* background: #f9f9f9;  */
+  /* border-radius: 8px;  */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+}
+
+/* Styles for the Budgeting text */
+.budget-text {
+  font-size: 16px; /* Readable font size */
+  line-height: 1.8; /* Adds line spacing for readability */
+  color: #555; /* Softer text color for readability */
+  text-align: justify; /* Aligns text to both left and right edges */
+}
+
+.budget-steps {
+  list-style: none; /* Removes default bullet points */
+  padding: 0; /* Removes extra padding around the list */
+  margin: 20px auto; /* Centers the list horizontally */
+  max-width: 600px; /* Restricts the width to ensure readability */
+  text-align: left; /* Ensures the text inside steps is aligned left */
+}
+
+.budget-steps li {
+  font-size: 16px; /* Sets a readable font size */
+  line-height: 1.8; /* Increases line spacing for readability */
+  color: #333; /* Darker text color for contrast */
+  background: #f9f9f9; /* Light background for each step */
+  padding: 15px; /* Adds padding inside each step */
+  margin-bottom: 10px; /* Adds spacing between steps */
+  border-radius: 8px; /* Soft rounded edges for each step */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  text-align: left; /* Text inside each step remains left-aligned */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.budget-steps li:hover {
+  transform: scale(1.05); /* Slightly enlarges the item */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+}
+
+.budget-steps li::before {
+  content: "✔️"; /* Adds a checkmark icon before each step */
+  margin-right: 10px; /* Adds spacing after the icon */
+  color: #0073e6; /* Gives the icon a primary color */
+  font-size: 1.2em; /* Slightly enlarges the icon */
+}
+
+.steps-nums {
+  font-weight: bold;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between videos */
+  margin: 20px 0; /* Optional: Add spacing around the grid */
+}
+
+.video-grid iframe {
+  width: 100%; /* Ensure videos fit within the column width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 500px; /* Restrict maximum width to make the videos smaller */
+  aspect-ratio: 16 / 9; /* Keep 16:9 ratio */
+  margin: 0 auto; /* Center the iframes within their grid cells */
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.iframe-container iframe {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  width: 300px; /* Set a fixed width for the wrapper */
+}
+
+.budgeting-image {
+  width: 100%; /* Ensure the image fits the wrapper */
+  height: auto; /* Maintain the aspect ratio */
+  opacity: 0.9; /* Slight transparency to hint it's a preview */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.7); /* Semi-transparent red text */
+  background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button-container {
+  margin-top: 10px; /* Add space between the image and the button */
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.faq-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0073e6;
+}
